@@ -1,0 +1,105 @@
+/** ========= GLOBAL STYLES ========= **/
+body {
+  font-size: 14px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input,
+textarea {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.clr {
+  clear: both;
+
+  &:after {
+    display: block;
+    content: '';
+    width: 100%;
+    clear: both;
+  }
+}
+
+.clearfix::-webkit-input-placeholder {
+  color: #fff;
+}
+
+::-moz-placeholder {
+  color: #fff;
+}
+
+:-ms-input-placeholder {
+  color: #fff;
+}
+
+:-moz-placeholder {
+  color: #fff;
+}
+
+input:disabled,
+textarea:disabled,
+select:disabled,
+button:disabled {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+
+/** ========= TYPOGRAPHY ========= **/
+a {
+  color: #ffcf51;
+
+  &:hover {
+    color: #ff9c00;
+    text-decoration: none;
+  }
+
+}
+
+p {
+  line-height: 24px;
+  margin-bottom: 30px;
+  letter-spacing: 1.2px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 0 20px;
+}
+
+.h2,
+h2 {
+  font-size: 30px;
+}
+
+.h3,
+h3 {
+  font-size: 20px;
+  text-transform: none;
+}
