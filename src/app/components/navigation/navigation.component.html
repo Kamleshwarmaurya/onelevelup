@@ -1,10 +1,12 @@
-<header class="navigation">
-  <div class="navigation__close">
+
+
+<header class="navigation"  [ngClass]="isOpen ? 'navigation--open' : ''">
+  <div class="navigation__close" (click)="toggle($event)">
     <fa-icon [icon]="faBars"></fa-icon>
   </div>
-  <div class="navigation__head">
+  <div class="navigation__head" >
     <div class="navigation__profile">
-      <img src="/assets/images/profile.png" alt="Profile Image" />
+      <img src="/assets/images/profile.jpg" alt="Profile Image" />
     </div>
     <div class="navigation__name">
       Kamleshwar Maurya

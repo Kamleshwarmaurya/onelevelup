@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faTwitter, faSkype, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
@@ -14,9 +14,14 @@ export class NavigationComponent implements OnInit {
   public faTwitter = faTwitter;
   public faSkype = faSkype;
   public faLinkedin = faLinkedin;
-  constructor() { }
+  public isOpen: Boolean = false;
+  constructor(public cd: ChangeDetectorRef) { }
 
   ngOnInit() {
+  }
+
+  public toggle(e) {
+    this.isOpen = !this.isOpen;
 
   }
 

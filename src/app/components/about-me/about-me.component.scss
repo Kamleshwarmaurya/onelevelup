@@ -1,0 +1,107 @@
+.about {
+  &--blue {
+    background-color: #516abc;
+  }
+
+  &__split-color {
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 45px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  &__number {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__heading {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  &__container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__head {}
+
+  &__heading-border {
+    padding-bottom: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+
+    &:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      width: 63px;
+      height: 3px;
+      background: #fff;
+      right: 0;
+      margin: 0 auto;
+    }
+
+  }
+
+  &__heading-border2 {
+    padding-bottom: 15px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      width: 47px;
+      height: 1px;
+      background: #fff;
+    }
+  }
+
+  &__image-wrapper {
+      margin-bottom: 20px;
+      text-align: center;
+      width: 250px;
+      margin: 0 auto 25px;
+  }
+
+  &__img {
+    position: relative;
+    border: #fff 10px solid;
+  }
+
+  .personal-info {
+    margin-bottom: 26px;
+  }
+
+  .personal-info-title {
+    width: 80px;
+    float: left;
+    font-weight: 800;
+    padding-right: 10px;
+    position: relative;
+    display: block;
+  }
+
+  .personal-info-title:after {
+    content: ":";
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .personal-info-disc {
+    padding-left: 100px;
+    display: block
+  }
+
+  
+}
