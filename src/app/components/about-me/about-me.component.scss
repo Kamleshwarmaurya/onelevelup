@@ -1,3 +1,5 @@
+@import '../../../assets/styles/base/mixin';
+
 .about {
   &--blue {
     background-color: #516abc;
@@ -9,6 +11,18 @@
     margin-bottom: 45px;
     text-align: center;
     background: rgba(0, 0, 0, 0.1);
+
+    @include media-medium {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 140px;
+      height: 100%;
+      padding: 115px 0 0;
+      text-align: center;
+      overflow: hidden;
+    }
   }
 
   &__number {
@@ -16,19 +30,90 @@
     line-height: 30px;
     font-weight: bold;
     margin-bottom: 10px;
+
+    @include media-medium {
+      margin-bottom: 35px;
+      font-size: 36px;
+      line-height: 36px;
+    }
   }
 
   &__heading {
     font-size: 30px;
     line-height: 30px;
+
+    @include media-medium {
+      transform: rotate(-90deg);
+      width: 254px;
+      top: 94px;
+      position: relative;
+      font-size: 37px;
+      margin: 0;
+      left: -55px;
+    }
+  }
+
+  &__container {
+    @include media-medium {
+      padding: 112px 0 112px 140px;
+      position: relative;
+    }
   }
 
   &__container-fluid {
     padding-left: 20px;
     padding-right: 20px;
+    @include media-medium {
+        &:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
   }
 
   &__head {}
+
+  &__heading2 {
+    font-size: 35px;
+    line-height: 35px;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.25;
+
+    @include media-medium {
+      font-size: 55px;
+      right: 26px;
+      line-height: normal;
+      position: absolute;
+      bottom: 0;
+      right: 75px;
+      text-align: right;
+      margin: 0;
+    }
+
+  }
+
+  &__content-wrapper {
+    margin-bottom: 40px;
+
+    @include media-medium {
+      float: left;
+      width: 33.33333333333%;
+      padding: 0 12px;
+    }
+  }
+
+  &__footer-wrapper {
+    @include media-medium {
+      float: left;
+      width: 33.33333333333%;
+      padding: 0 12px;
+    }
+  }
 
   &__heading-border {
     padding-bottom: 25px;
@@ -67,10 +152,16 @@
   }
 
   &__image-wrapper {
-      margin-bottom: 20px;
-      text-align: center;
-      width: 250px;
-      margin: 0 auto 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 250px;
+    margin: 0 auto 25px;
+
+    @include media-medium {
+      float: left;
+      width: 33.33333333333%;
+      padding: 0 12px;
+    }
   }
 
   &__img {
@@ -103,5 +194,5 @@
     display: block
   }
 
-  
+
 }

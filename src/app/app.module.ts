@@ -7,13 +7,15 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { MySkillsComponent } from './components/my-skills/my-skills.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     SpinnerComponent,
     LandingComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    MySkillsComponent
   ],
   imports: [
     BrowserModule,
