@@ -15,6 +15,7 @@ export class NavigationComponent implements OnInit {
   public faSkype = faSkype;
   public faLinkedin = faLinkedin;
   public isOpen: Boolean = false;
+  public year: string;
   constructor(public cd: ChangeDetectorRef) { }
 
   ngOnInit() {
@@ -22,7 +23,7 @@ export class NavigationComponent implements OnInit {
 
   public toggle(e) {
     this.isOpen = !this.isOpen;
-
+    this.year = new Date().getFullYear().toString();
   }
 
 }
